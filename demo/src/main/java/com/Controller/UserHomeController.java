@@ -10,20 +10,34 @@ import javafx.scene.control.*;
 
 public class UserHomeController {
     @FXML 
-    Button btLichKham;
-    @FXML 
     Button btPhongKham;
     @FXML 
-    Button btTimKiem;
+    Button btTimBacSy;
     @FXML 
     Button btThongTin;
     @FXML 
     Button btLogout;
+    @FXML 
+    Button btTrangChu;
+    @FXML 
+    Button btDatLich;
 
     public void onClickLogout(ActionEvent actionEvent) throws SQLException, IOException {
         App.setRoot("loginFrm");
     }
     public void onClickThongTin(ActionEvent actionEvent) throws SQLException, IOException{
-        App.setRoot("infoUserFrm");
+        App.setRoot("inforUser");
+    }
+    public void onClickTrangChu(ActionEvent actionEvent) throws SQLException, IOException{
+        App.setRoot("UserHome");
+    }
+    public void onClickPhongKham(ActionEvent actionEvent) throws SQLException, IOException{
+        App.setRoot("PhongKham");
+    }
+    public void onClickTimBacSy(ActionEvent actionEvent) throws SQLException, IOException{
+        App.setRoot("SearchUser");
+    }
+    public void onClickDatLich(ActionEvent actionEvent) throws SQLException, IOException{
+        App.setRoot("BookingUser");
     }
 }

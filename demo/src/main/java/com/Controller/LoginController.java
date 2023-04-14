@@ -105,7 +105,7 @@ public class LoginController {
         if (checkAccount() == 1 && selectedRole.equals("Psychologists")) {
             App.setRoot("PsychologistsFrm");
         } else if (checkAccount() == 2 && selectedRole.equals("User")) {
-            App.setRoot("userFrm");
+            App.setRoot("UserHome");
         } else {
             AlertHelper.showLoginError("Sai tên đăng nhập hoặc mật khẩu");
         }
