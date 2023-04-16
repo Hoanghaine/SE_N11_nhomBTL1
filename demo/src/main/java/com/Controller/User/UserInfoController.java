@@ -25,12 +25,5 @@ public class UserInfoController {
     RadioButton rbtNu;
     RadioButton radioButton1 = new RadioButton("Nam");
     RadioButton radioButton2 = new RadioButton("Nu");
-    
-    // String ten = txtTen.getText();
-    // String tuoi = txtTuoi.getText();
-    // String diachi = txtDiaChi.getText();
-    // String sdt = txtSdt.getText();
-    // public void onClickSave(ActionEvent actionEvent){
-    //     return;
-    // }
+
 }
