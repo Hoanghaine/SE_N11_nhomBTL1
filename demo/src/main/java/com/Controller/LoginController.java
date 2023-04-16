@@ -30,6 +30,7 @@ public class LoginController {
     Button btnSignup;
     
     private String selectedRole = "User";
+    public static  String inputUsername = " ";
     private ArrayList<AccountBenhnhan> userAccounts = new ArrayList<>();
     private ArrayList<AccountBacsi> pyschologistsAccounts = new ArrayList<>();
 
@@ -78,7 +79,7 @@ public class LoginController {
     }
 
     private int checkAccount() {
-        String inputUsername = txtUsername.getText();
+        inputUsername = txtUsername.getText();
         String inputPassword = txtPassword.getText();
         
         for (AccountBacsi account : pyschologistsAccounts) {
