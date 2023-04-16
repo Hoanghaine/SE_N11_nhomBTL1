@@ -1,4 +1,4 @@
-package com.Controller.User;
+package com.Controller.Psy;
 import java.io.IOException;
 
 import com.App;
@@ -9,11 +9,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
-public class UserInfoController {
+public class PsyUpdateInforController {
     @FXML
     Button btPhongKham;
     @FXML
-    Button btTimBacSi;
+    Button btTraLoi;
     @FXML
     Button btThongTin;
     @FXML
@@ -22,26 +22,25 @@ public class UserInfoController {
     Button btTrangChu;
     @FXML
     Button btLich;
+    @FXML
+    Button btBack;
     public void onClickPhongKham(ActionEvent actionEvent)throws SQLException, IOException{
-        App.setRoot("UserPhongKham");
+        App.setRoot("PsyPhongKham");
     }
     public void onClickTrangChu(ActionEvent actionEvent)throws SQLException, IOException{
-        App.setRoot("UserHome");
+        App.setRoot("PsyHome");
     }
-    public void onClickTimBacSi(ActionEvent actionEvent)throws SQLException, IOException{
-        App.setRoot("SearchPsy");
+    public void onClickTraLoi(ActionEvent actionEvent)throws SQLException, IOException{
+        App.setRoot("PsyResponse");
     }
     public void onClickLich(ActionEvent actionEvent)throws SQLException, IOException{
-        App.setRoot("UserLich");
+        App.setRoot("PsyLich");
     }
-    public void onClickUpdate(ActionEvent actionEvent)throws SQLException, IOException{
-        App.setRoot("UserUpdateInfor");
-    }
-
     public void onClickLogout(ActionEvent actionEvent) throws SQLException, IOException  {
         App.setRoot("loginFrm");
     }
-
-    public void btTimBacSi(ActionEvent actionEvent) {
+    public void onClickBack(ActionEvent actionEvent) throws SQLException, IOException  {
+        App.setRoot("PsyInfor");
     }
+
 }

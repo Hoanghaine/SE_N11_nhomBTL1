@@ -103,7 +103,7 @@ public class LoginController {
         }
 
         if (checkAccount() == 1 && selectedRole.equals("Psychologists")) {
-            App.setRoot("PsychologistsFrm");
+            App.setRoot("PsyHome");
         } else if (checkAccount() == 2 && selectedRole.equals("User")) {
             App.setRoot("UserHome");
         } else {

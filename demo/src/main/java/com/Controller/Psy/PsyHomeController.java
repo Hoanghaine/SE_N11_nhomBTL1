@@ -1,57 +1,41 @@
-package com.Controller;
-
+package com.Controller.Psy;
 import java.io.IOException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
+
 import com.App;
-import com.Helper.AlertHelper;
-import com.utils.ExecuteQuery;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.layout.AnchorPane;
+import java.sql.SQLException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
 public class PsyHomeController {
     @FXML
-    Button btThongTin;
-    @FXML
     Button btPhongKham;
     @FXML
-    Button btLichKham;
+    Button btTraLoi;
     @FXML
-    Button btYeuCau;
+    Button btThongTin;
     @FXML
     Button btLogout;
     @FXML
-    AnchorPane pane;
-
+    Button btTrangChu;
     @FXML
-    private  void initialize(){
-        paneTrangChu();
-    }
-    private void loadPane(String frm){
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(frm));
-            AnchorPane adminPane = loader.load();
-            pane.getChildren().add(adminPane);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+    Button btLich;
     public void onClickPhongKham(ActionEvent actionEvent)throws SQLException, IOException{
-        panePhongKham();
+        App.setRoot("PsyPhongKham");
+    }
+    public void onClickThongTin(ActionEvent actionEvent)throws SQLException, IOException{
+        App.setRoot("PsyInfor");
+    }
+    public void onClickTraLoi(ActionEvent actionEvent)throws SQLException, IOException{
+        App.setRoot("PsyResponse");
+    }
+    public void onClickLich(ActionEvent actionEvent)throws SQLException, IOException{
+        App.setRoot("PsyLich");
     }
     public void onClickLogout(ActionEvent actionEvent) throws SQLException, IOException  {
         App.setRoot("loginFrm");
     }
 
-    private void paneTrangChu(){
-        loadPane("TrangChu");
-    }
-    private void panePhongKham(){
-        loadPane("PhongKham");
-    }
 }

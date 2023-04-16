@@ -1,4 +1,4 @@
-package com.Controller;
+package com.Controller.User;
 import java.io.IOException;
 
 import com.App;
@@ -13,26 +13,26 @@ public class UserHomeController {
     @FXML 
     Button btPhongKham;
     @FXML 
-    Button btTimBacSy;
+    Button btTimBacSi;
     @FXML 
     Button btThongTin;
     @FXML 
     Button btLogout;
-//    @FXML
-//    Button btTrangChu;
+    @FXML
+    Button btTrangChu;
     @FXML 
     Button btLich;
     public void onClickPhongKham(ActionEvent actionEvent)throws SQLException, IOException{
-        App.setRoot("PhongKham");
+        App.setRoot("UserPhongKham");
     }
     public void onClickThongTin(ActionEvent actionEvent)throws SQLException, IOException{
-        App.setRoot("inforUser");
+        App.setRoot("UserInfor");
     }
     public void onClickTimBacSi(ActionEvent actionEvent)throws SQLException, IOException{
         App.setRoot("SearchPsy");
     }
     public void onClickLich(ActionEvent actionEvent)throws SQLException, IOException{
-        App.setRoot("LichUser");
+        App.setRoot("UserLich");
     }
     public void onClickLogout(ActionEvent actionEvent) throws SQLException, IOException  {
         App.setRoot("loginFrm");

@@ -9,7 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
-public class UserInfoController {
+public class UserFindController {
     @FXML
     Button btPhongKham;
     @FXML
@@ -25,23 +25,17 @@ public class UserInfoController {
     public void onClickPhongKham(ActionEvent actionEvent)throws SQLException, IOException{
         App.setRoot("UserPhongKham");
     }
+    public void onClickThongTin(ActionEvent actionEvent)throws SQLException, IOException{
+        App.setRoot("UserInfor");
+    }
     public void onClickTrangChu(ActionEvent actionEvent)throws SQLException, IOException{
         App.setRoot("UserHome");
-    }
-    public void onClickTimBacSi(ActionEvent actionEvent)throws SQLException, IOException{
-        App.setRoot("SearchPsy");
     }
     public void onClickLich(ActionEvent actionEvent)throws SQLException, IOException{
         App.setRoot("UserLich");
     }
-    public void onClickUpdate(ActionEvent actionEvent)throws SQLException, IOException{
-        App.setRoot("UserUpdateInfor");
-    }
-
     public void onClickLogout(ActionEvent actionEvent) throws SQLException, IOException  {
         App.setRoot("loginFrm");
     }
 
-    public void btTimBacSi(ActionEvent actionEvent) {
-    }
 }
