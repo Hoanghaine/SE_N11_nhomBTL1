@@ -12,3 +12,8 @@
 - Mô tả tiến trình : học cách thao tác với mySQL để làm một số chức năng và hoàn thiện giao diện
 - Mục tiêu: tiếp tục hoàn thiện các chức năng còn lại
 - 
+
+Nguyễn Minh Quân:
+- Việc Hoàn Thành: hoàn thiện giao diện cho bệnh nhân, hiện thị các chức năng.
+- Mô tả tiến trình : sử dụng kiến thức đã học để thực hiện các chức năng
+- Mục tiêu: hoàn thành các chức năng còn lại 
