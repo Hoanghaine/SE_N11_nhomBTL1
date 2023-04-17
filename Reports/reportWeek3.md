@@ -17,3 +17,8 @@ Nguyễn Minh Quân:
 - Việc Hoàn Thành: hoàn thiện giao diện cho bệnh nhân, hiện thị các chức năng.
 - Mô tả tiến trình : sử dụng kiến thức đã học để thực hiện các chức năng
 - Mục tiêu: hoàn thành các chức năng còn lại 
+
+Nguyễn Việt Hưng:
+- việc hoàn thành: hoàn thiện giao diện 
+- mô tả tiến trình: tiếp tục hoàn thiện chức năng
+- mục tiêu: hoàn thiện các chức năng còn lại
