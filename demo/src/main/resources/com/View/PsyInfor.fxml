@@ -19,7 +19,7 @@
             <children>
                 <ImageView fitHeight="42.0" fitWidth="87.0" layoutX="453.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@image/icons8-medical-doctor-50.png" />
+                        <Image url="@../image/icons8-medical-doctor-50.png" />
                     </image>
                 </ImageView>
                 <AnchorPane fx:id="pane" layoutX="129.0" layoutY="41.0" prefHeight="438.0" prefWidth="530.0" style="-fx-border-color: #00FA9A;" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="129.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="41.0">
@@ -86,28 +86,28 @@
                         <Button fx:id="btTrangChu" layoutX="6.0" layoutY="24.0" mnemonicParsing="false" onAction="#onClickTrangChu" opacity="0.24" prefHeight="65.0" prefWidth="94.0" AnchorPane.leftAnchor="6.0" />
                         <ImageView disable="true" fitHeight="50.0" fitWidth="55.0" layoutX="28.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@image/icons8-hospital-64.png" />
+                                <Image url="@../image/icons8-hospital-64.png" />
                             </image>
                         </ImageView>
                         <ImageView disable="true" fitHeight="50.0" fitWidth="55.0" layoutX="29.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@image/icons8-doctor-64.png" />
+                                <Image url="@../image/icons8-doctor-64.png" />
                             </image>
                         </ImageView>
                         <Button fx:id="btLich" layoutX="6.0" layoutY="390.0" mnemonicParsing="false" onAction="#onClickLich" opacity="0.24" prefHeight="65.0" prefWidth="94.0" />
                         <ImageView disable="true" fitHeight="50.0" fitWidth="55.0" layoutX="29.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@image/icons8-clock-64.png" />
+                                <Image url="@../image/icons8-clock-64.png" />
                             </image>
                         </ImageView>
                         <ImageView disable="true" fitHeight="50.0" fitWidth="55.0" layoutX="27.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@image/icons8-medical-64.png" />
+                                <Image url="@../image/icons8-medical-64.png" />
                             </image>
                         </ImageView>
                         <ImageView disable="true" fitHeight="45.0" fitWidth="42.0" layoutX="31.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@image/icons8-medical-60.png" />
+                                <Image url="@../image/icons8-medical-60.png" />
                             </image>
                         </ImageView>
                     </children>

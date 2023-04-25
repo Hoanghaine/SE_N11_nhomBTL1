@@ -38,7 +38,7 @@
                <children>
                   <ImageView fitHeight="309.0" fitWidth="282.0" layoutX="20.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@image/338301035_1501018487092950_5046109906112183802_n.png" />
+                        <Image url="@../image/338301035_1501018487092950_5046109906112183802_n.png" />
                      </image>
                   </ImageView>
                   <Text layoutX="100.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HealthNet">

@@ -33,7 +33,7 @@ public class LoginController {
     public static  String inputUsername = " ";
     private ArrayList<AccountBenhnhan> userAccounts = new ArrayList<>();
     private ArrayList<AccountBacsi> pyschologistsAccounts = new ArrayList<>();
-
+    public static Integer idNow = -1;
     @FXML
     public void initialize() { // xu ly combobox
         setCbRole();
@@ -59,7 +59,7 @@ public class LoginController {
         try {
             while (resultSet.next()) {
                 pyschologistsAccounts.add(new AccountBacsi(resultSet.getString("username"),
-                        resultSet.getString("password")));
+                        resultSet.getString("password"),resultSet.getInt("id_bacsi")));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -71,7 +71,7 @@ public class LoginController {
         try {
             while (resultSet.next()) {
                 userAccounts.add(new AccountBenhnhan(resultSet.getString("username"),
-                        resultSet.getString("password")));
+                        resultSet.getString("password"),resultSet.getInt("id_benhnhan")));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -84,12 +84,14 @@ public class LoginController {
         
         for (AccountBacsi account : pyschologistsAccounts) {
             if (account.getUsername().equals(inputUsername) && account.getPassword().equals(inputPassword)) {
+                idNow = account.get_id_bacsi();
                 return 1;
             }
         }
     
         for (AccountBenhnhan account : userAccounts) {
             if (account.getUsername().equals(inputUsername) && account.getPassword().equals(inputPassword)) {
+                idNow = account.get_id_benhnhan();
                 return 2;
             }
         }

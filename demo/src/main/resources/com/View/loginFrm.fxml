@@ -27,7 +27,7 @@
                <children>
                   <ImageView fitHeight="309.0" fitWidth="282.0" layoutX="20.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@image/338301035_1501018487092950_5046109906112183802_n.png" />
+                        <Image url="@../image/338301035_1501018487092950_5046109906112183802_n.png" />
                      </image>
                   </ImageView>
                   <Text fill="#320308" layoutX="86.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MentalNet">
@@ -42,12 +42,12 @@
             <PasswordField fx:id="txtPassword" layoutX="425.0" layoutY="257.0" prefHeight="31.0" prefWidth="213.0" promptText="Password" />
             <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="382.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@image/icons8-user-30.png" />
+                  <Image url="@../image/icons8-user-30.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="381.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@image/icons8-secure-30.png" />
+                  <Image url="@../image/icons8-secure-30.png" />
                </image>
             </ImageView>
             <Text layoutX="394.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phần mềm kết nối bệnh nhân và bác sỹ" textAlignment="CENTER" wrappingWidth="275.6708984375">

@@ -14,6 +14,7 @@ public class ExecuteQuery {
     private final static String username = "root";
     private final static String password = "Matkhaunek123";
 
+
     public ExecuteQuery(String query) {
         this.query = query;
         executeQuery();
@@ -44,4 +45,7 @@ public class ExecuteQuery {
             e.printStackTrace();
         }
     }
+
+
+
 }
